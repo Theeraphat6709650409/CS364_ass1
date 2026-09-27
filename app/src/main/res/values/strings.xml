@@ -19,4 +19,8 @@
     <string name="bmi_cat_obese_class_1">Obese Class I</string>
     <string name="bmi_cat_obese_class_2">Obese Class II</string>
     <string name="bmi_cat_obese_class_3">Obese Class III</string>
+    <string name="dialog_font_changed_title">Font Size Changed</string>
+    <string name="dialog_font_changed_msg">Do you want to apply the new font size to this app?</string>
+    <string name="btn_use_system">Use System</string>
+    <string name="btn_keep_original">Keep Original</string>
 </resources>

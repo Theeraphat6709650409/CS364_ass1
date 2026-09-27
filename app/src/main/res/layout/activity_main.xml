@@ -5,26 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:padding="24dp"
+    android:padding="@dimen/layout_padding"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:background="?attr/android:colorBackground"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
-
 
         <!-- หัวข้อแอปพลิเคชัน -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="@dimen/spacing_large"
             android:text="@string/app_title"
             android:textColor="?attr/colorPrimary"
-            android:textSize="22sp"
+            android:textSize="@dimen/text_size_title"
             android:textStyle="bold" />
 
         <!-- ตารางข้อมูลที่ขยายตามความกว้างจอ -->
@@ -38,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingBottom="12dp">
+                android:paddingBottom="@dimen/row_spacing">
 
                 <TextView
                     android:id="@+id/tvWeightLabel"
@@ -46,21 +45,21 @@
                     android:layout_height="wrap_content"
                     android:labelFor="@+id/etWeight"
                     android:paddingStart="0dp"
-                    android:paddingEnd="12dp"
+                    android:paddingEnd="@dimen/row_spacing"
                     android:text="@string/label_weight"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
 
                 <EditText
                     android:id="@+id/etWeight"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/input_field_height"
                     android:background="@android:drawable/editbox_background_normal"
                     android:gravity="center"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
             </TableRow>
 
             <!-- แถวส่วนสูง -->
@@ -68,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingBottom="12dp">
+                android:paddingBottom="@dimen/row_spacing">
 
                 <TextView
                     android:id="@+id/tvHeightLabel"
@@ -76,21 +75,21 @@
                     android:layout_height="wrap_content"
                     android:labelFor="@+id/etHeight"
                     android:paddingStart="0dp"
-                    android:paddingEnd="12dp"
+                    android:paddingEnd="@dimen/row_spacing"
                     android:text="@string/label_height"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
 
                 <EditText
                     android:id="@+id/etHeight"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/input_field_height"
                     android:background="@android:drawable/editbox_background_normal"
                     android:gravity="center"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
             </TableRow>
 
             <!-- แถวค่าดัชนีมวลกาย -->
@@ -98,26 +97,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingBottom="12dp">
+                android:paddingBottom="@dimen/row_spacing">
 
                 <TextView
                     android:id="@+id/tvBmiLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="0dp"
-                    android:paddingEnd="12dp"
+                    android:paddingEnd="@dimen/row_spacing"
                     android:text="@string/label_bmi"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
 
                 <TextView
                     android:id="@+id/tvBmiResult"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/input_field_height"
                     android:background="@color/bg_gray"
                     android:gravity="center"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
             </TableRow>
 
             <!-- แถวเกณฑ์ผลลัพธ์ -->
@@ -125,41 +124,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:paddingBottom="24dp">
+                android:paddingBottom="@dimen/spacing_large">
 
                 <TextView
                     android:id="@+id/tvCategoryLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="0dp"
-                    android:paddingEnd="12dp"
+                    android:paddingEnd="@dimen/row_spacing"
                     android:text="@string/label_category"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
 
                 <TextView
                     android:id="@+id/tvCategoryResult"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/input_field_height"
                     android:background="@color/bg_gray"
                     android:gravity="center"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_body" />
             </TableRow>
         </TableLayout>
 
         <!-- ปุ่มคำนวณ -->
         <Button
             android:id="@+id/btnCalculate"
-            android:textColor="@color/white_text_button"
-            android:background="@color/button_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="120dp"
-            android:text="@string/btn_calculate"
+            android:background="@color/button_color"
             android:gravity="center"
-            android:textSize="16sp" />
-
+            android:minWidth="@dimen/button_min_width"
+            android:text="@string/btn_calculate"
+            android:textColor="@color/white_text_button"
+            android:textSize="@dimen/text_size_body" />
 
     </LinearLayout>
 </ScrollView>

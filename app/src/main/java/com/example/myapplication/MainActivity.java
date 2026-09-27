@@ -88,16 +88,16 @@ public class MainActivity extends AppCompatActivity {
             float systemFontScale = newConfig.fontScale;
 
             new androidx.appcompat.app.AlertDialog.Builder(this)
-                    .setTitle("Font Size Changed")
-                    .setMessage("Do you want to apply the new font size to this app?")
+                    .setTitle(R.string.dialog_font_changed_title)
+                    .setMessage(R.string.dialog_font_changed_msg)
                     .setCancelable(false)
                     // ปรับตามเครื่อง
-                    .setPositiveButton("Use System", (dialog, which) -> {
+                    .setPositiveButton(R.string.btn_use_system, (dialog, which) -> {
                         currentFontScale = systemFontScale;
                         applyFontScale(systemFontScale);
                     })
                     // คงค่าแอพเดิมไว้
-                    .setNegativeButton("Keep Original", (dialog, which) -> {
+                    .setNegativeButton(R.string.btn_keep_original, (dialog, which) -> {
                         currentFontScale = 1.0f;
                         applyFontScale(1.0f);
                     })

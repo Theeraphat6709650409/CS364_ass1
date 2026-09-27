@@ -20,4 +20,8 @@
     <string name="bmi_cat_obese_class_1">อ้วนระดับ 1</string>
     <string name="bmi_cat_obese_class_2">อ้วนระดับ 2</string>
     <string name="bmi_cat_obese_class_3">อ้วนระดับ 3</string>
+    <string name="dialog_font_changed_title">ขนาดฟอนต์เปลี่ยน</string>
+    <string name="dialog_font_changed_msg">คุณต้องการใช้ขนาดฟอนต์ใหม่กับแอปนี้หรือไม่?</string>
+    <string name="btn_use_system">ตามระบบ</string>
+    <string name="btn_keep_original">คงค่าเดิม</string>
 </resources>
