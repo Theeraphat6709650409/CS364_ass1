@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">BMI Calculator</string>
     <string name="button1">Button1</string>
     <string name="button2">Button2</string>
     <string name="button3">Button3</string>
@@ -9,4 +9,14 @@
     <string name="label_bmi">BMI</string>
     <string name="label_category">Category</string>
     <string name="btn_calculate">Calculate</string>
+    <string name="msg_fill_all_fields">Please fill in all fields</string>
+    <string name="msg_invalid_input">Invalid weight or height value</string>
+    <string name="bmi_cat_severe_thinness">Severe Thinness</string>
+    <string name="bmi_cat_moderate_thinness">Moderate Thinness</string>
+    <string name="bmi_cat_mild_thinness">Mild Thinness</string>
+    <string name="bmi_cat_normal">Normal</string>
+    <string name="bmi_cat_overweight">Overweight</string>
+    <string name="bmi_cat_obese_class_1">Obese Class I</string>
+    <string name="bmi_cat_obese_class_2">Obese Class II</string>
+    <string name="bmi_cat_obese_class_3">Obese Class III</string>
 </resources>

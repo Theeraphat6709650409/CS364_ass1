@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             String heightStr = etHeight.getText().toString().trim();
 
             if (weightStr.isEmpty() || heightStr.isEmpty()) {
-                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.msg_fill_all_fields, Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             double heightCm = Double.parseDouble(heightStr);
 
             if (heightCm <= 0 || weight <= 0) {
-                Toast.makeText(this, "Invalid weight or height value", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.msg_invalid_input, Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -55,26 +55,26 @@ public class MainActivity extends AppCompatActivity {
             String formattedBmi = formatter.format(bmi);
             tvBmiResult.setText(formattedBmi);
 
-            String category;
+            int categoryResId;
             if (bmi < 16.0) {
-                category = "Severe Thinness";
+                categoryResId = R.string.bmi_cat_severe_thinness;
             } else if (bmi < 17.0) {
-                category = "Moderate Thinness";
+                categoryResId = R.string.bmi_cat_moderate_thinness;
             } else if (bmi < 18.5) {
-                category = "Mild Thinness";
+                categoryResId = R.string.bmi_cat_mild_thinness;
             } else if (bmi < 25.0) {
-                category = "Normal";
+                categoryResId = R.string.bmi_cat_normal;
             } else if (bmi < 30.0) {
-                category = "Overweight";
+                categoryResId = R.string.bmi_cat_overweight;
             } else if (bmi < 35.0) {
-                category = "Obese Class I";
+                categoryResId = R.string.bmi_cat_obese_class_1;
             } else if (bmi < 40.0) {
-                category = "Obese Class II";
+                categoryResId = R.string.bmi_cat_obese_class_2;
             } else {
-                category = "Obese Class III";
+                categoryResId = R.string.bmi_cat_obese_class_3;
             }
 
-            tvCategoryResult.setText(category);
+            tvCategoryResult.setText(categoryResId);
         });
     }
     private float currentFontScale = 1.0f;
@@ -110,8 +110,6 @@ public class MainActivity extends AppCompatActivity {
         android.util.DisplayMetrics metrics = getResources().getDisplayMetrics();
         metrics.scaledDensity = config.fontScale * metrics.density;
         getBaseContext().getResources().updateConfiguration(config, metrics);
-
-        // รีเฟรชหน้าจอเพื่อให้ขนาดตัวอักษรเปลี่ยนทันที
         recreate();
     }
 }

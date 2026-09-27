@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">แอปของฉัน</string>
+    <string name="app_name">เครื่องคำนวณ BMI</string>
     <string name="button1">ปุ่มที่1</string>
     <string name="button2">ปุ่มที่2</string>
     <string name="button3">ปุ่มที่3</string>
@@ -10,4 +10,14 @@
     <string name="label_bmi">ค่าดัชนีมวลกาย (BMI)</string>
     <string name="label_category">เกณฑ์สุขภาพ</string>
     <string name="btn_calculate">คำนวณ</string>
+    <string name="msg_fill_all_fields">กรุณากรอกข้อมูลให้ครบถ้วน</string>
+    <string name="msg_invalid_input">ค่าน้ำหนักหรือส่วนสูงไม่ถูกต้อง</string>
+    <string name="bmi_cat_severe_thinness">ผอมมาก</string>
+    <string name="bmi_cat_moderate_thinness">ผอมระดับปานกลาง</string>
+    <string name="bmi_cat_mild_thinness">ผอมเล็กน้อย</string>
+    <string name="bmi_cat_normal">ปกติ (สมส่วน)</string>
+    <string name="bmi_cat_overweight">น้ำหนักเกิน</string>
+    <string name="bmi_cat_obese_class_1">อ้วนระดับ 1</string>
+    <string name="bmi_cat_obese_class_2">อ้วนระดับ 2</string>
+    <string name="bmi_cat_obese_class_3">อ้วนระดับ 3</string>
 </resources>
