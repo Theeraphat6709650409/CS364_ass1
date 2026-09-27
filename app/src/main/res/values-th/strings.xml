@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">แอปของฉัน</string>
+    <string name="button1">ปุ่มที่1</string>
+    <string name="button2">ปุ่มที่2</string>
+    <string name="button3">ปุ่มที่3</string>
+    <string name="app_title">โปรแกรมคำนวณ BMI</string>
+    <string name="label_weight">น้ำหนัก (กก.)</string>
+    <string name="label_height">ส่วนสูง (ซม.)</string>
+    <string name="label_bmi">ค่าดัชนีมวลกาย (BMI)</string>
+    <string name="label_category">เกณฑ์สุขภาพ</string>
+    <string name="btn_calculate">คำนวณ</string>
+</resources>
